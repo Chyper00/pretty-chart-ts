@@ -1,8 +1,6 @@
 # pretty-chart-ts 📊
 
 [![npm version](https://img.shields.io/npm/v/pretty-chart-ts.svg)](https://www.npmjs.com/package/pretty-chart-ts)
-[![npm downloads](https://img.shields.io/npm/dt/pretty-chart-ts.svg)](https://www.npmjs.com/package/pretty-chart-ts)
-[![GitHub license](https://img.shields.io/github/license/yourusername/pretty-chart-ts)](https://github.com/yourusername/pretty-chart-ts/blob/main/LICENSE)
 
 ## About ℹ️
 
