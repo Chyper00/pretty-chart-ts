@@ -1,4 +1,4 @@
-import { BarChart } from "pretty-chart";
+import { BarChart } from "pretty-chart-ts";
 
 const data = [30, 70, 100, 50, 90];
 const labels = ['A', 'B', 'C', 'D', 'E'];
