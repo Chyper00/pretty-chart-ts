@@ -1,12 +1,19 @@
 import { BarChart } from "pretty-chart";
-const data = [30, 70, 100, 50, 90];  // Exemplo de dados
-const labels = ['A', 'B', 'C', 'D', 'E'];  // Exemplo de labels
+
+const data = [30, 70, 100, 50, 90];
+const labels = ['A', 'B', 'C', 'D', 'E'];
 
 function App() {
 	return (
 		<>
-			<div>
-				<BarChart data={data} labels={labels} />
+			<div className="flex justify-center items-center h-screen bg-zinc-950 text-white">
+				<BarChart
+					data={data}
+					labels={labels}
+					backgroundColor="#7134db"
+					borderRadius="3px"
+					duration={1.5}
+				/>
 			</div>
 		</>
 	);
