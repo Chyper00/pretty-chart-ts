@@ -1,15 +1,28 @@
-import type { Meta } from '@storybook/react';
-import { BarChart } from './BarChart';
+import type { Meta, StoryFn } from '@storybook/react';
+import { BarChart, BarChartProps } from './BarChart';
 
-
-const meta: Meta = {
+const meta: Meta<typeof BarChart> = {
 	component: BarChart,
 	title: 'Components/BarChart',
+	argTypes: {
+		backgroundColor: { control: 'color' },
+		borderRadius: { control: 'text' },
+		duration: { control: 'number' },
+	},
 };
+
 const data = [30, 70, 100, 50, 90];
 const labels = ['A', 'B', 'C', 'D', 'E'];
 
 export default meta;
 
-export const BarChartStory = (args: any) => <BarChart data={data} labels={labels} />;
+const Template: StoryFn<BarChartProps> = (args) => <BarChart {...args} />;
 
+export const BarChartStory = Template.bind({});
+BarChartStory.args = {
+	data,
+	labels,
+	backgroundColor: '#b72fb7',
+	borderRadius: '3px',
+	duration: 1.5,
+};

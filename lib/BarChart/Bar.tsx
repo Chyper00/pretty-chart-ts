@@ -1,20 +1,34 @@
 import { motion } from 'framer-motion';
 
-export const Bar = ({ value, maxHeight }: any) => {
+interface BarProps {
+  value: number;
+  maxHeight: number;
+  backgroundColor?: string;
+  borderRadius?: string;
+  duration?: number;
+}
+
+export const Bar: React.FC<BarProps> = ({
+  value,
+  maxHeight,
+  backgroundColor = '#55db34',
+  borderRadius = '3px',
+  duration = 1.5
+}) => {
   const scaledHeight = (value / maxHeight) * 100;
+
   return (
     <div className='gap-2'>
       <motion.div
         initial={{ width: 55 }}
-        animate={{ height: scaledHeight }}  // Altura final da barra
-        transition={{ duration: 1.5 }}  // Duração da animação
+        animate={{ height: scaledHeight }}
+        transition={{ duration }}
         style={{
           height: '0px',
-          backgroundColor: '#3498db',
-          borderRadius: '3px',
+          backgroundColor,
+          borderRadius,
         }}
       />
     </div>
   );
 };
-
