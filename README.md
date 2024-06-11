@@ -18,7 +18,7 @@ npm install pretty-chart-ts
 yarn add pretty-chart-ts
 ```
 
-# Sample
+## Example bar-chart
 
 ```bash
 import React from 'react';
