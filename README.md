@@ -29,9 +29,13 @@ const labels = ['A', 'B', 'C', 'D', 'E'];
 
 function App() {
   return (
-    <div>
-      <BarChart data={data} labels={labels} />
-    </div>
+    <BarChart
+        data={data}
+        labels={labels}
+        backgroundColor="#7134db"
+        borderRadius="3px"
+        duration={1.5}
+		/>
   );
 }
 
