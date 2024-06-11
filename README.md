@@ -34,8 +34,7 @@ function App() {
         labels={labels}
         backgroundColor="#7134db"
         borderRadius="3px"
-        duration={1.5}
-		/>
+        duration={1.5} />
   );
 }
 
