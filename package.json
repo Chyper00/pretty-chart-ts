@@ -5,8 +5,13 @@
   "files": [
     "dist"
   ],
+  "author": "Diego Rocha dos Santos",
   "main": "./dist/pretty-chart.umd.cjs",
   "module": "./dist/pretty-chart.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seuusername/pretty-chart-ts.git"
+  },
   "exports": {
     ".": {
       "import": "./dist/pretty-chart.js",
