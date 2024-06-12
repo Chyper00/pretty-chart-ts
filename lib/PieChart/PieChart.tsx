@@ -1,26 +1,70 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import './PieChart.css';
 
-const data = [
-  { value: 30, label: 'A', description: 'Description A' },
-  { value: 70, label: 'B', description: 'Description B' },
-  { value: 100, label: 'C', description: 'Description C' },
-  { value: 50, label: 'D', description: 'Description D' },
-  { value: 90, label: 'E', description: 'Description E' },
-  { value: 30, label: 'A', description: 'Description A' },
-  { value: 70, label: 'B', description: 'Description B' },
-  { value: 100, label: 'C', description: 'Description C' },
-  { value: 50, label: 'D', description: 'Description D' },
-  { value: 90, label: 'E', description: 'Description E' }
-];
+interface DataItem {
+  label: string;
+  value: number;
+  color: string;
+  description: string;
+}
 
-export const PieChart: React.FC = () => {
-  const total = data.reduce((acc, item) => acc + item.value, 0);
-  console.log(total)
+export interface PieChartProps {
+  data: DataItem[];
+  textColor?: string;
+}
 
-  // let startAngle = 0;
+export const PieChart: React.FC<PieChartProps> = ({ data, textColor = "#fff" }) => {
+
+  const total = data.reduce((acc, curr) => acc + curr.value, 0);
+
+  let startAngle = 0;
+  const slices: any = [];
+  const labels: any = [];
+  data.forEach((slice, index) => {
+    const angle = (slice.value / total) * 360;
+    const endAngle = startAngle + angle;
+    const largeArcFlag = angle > 180 ? 1 : 0;
+
+    const startX = Math.cos((startAngle * Math.PI) / 180) * 100;
+    const startY = Math.sin((startAngle * Math.PI) / 180) * 100;
+    const endX = Math.cos((endAngle * Math.PI) / 180) * 100;
+    const endY = Math.sin((endAngle * Math.PI) / 180) * 100;
+
+    const pathData = `M 0 0 L ${startX} ${startY} A 100 100 0 ${largeArcFlag} 1 ${endX} ${endY} Z`;
+
+    slices.push(
+      <motion.g
+        key={slice.label}
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.5, delay: index * 0.1 }}>
+        <motion.path d={pathData} fill={slice.color} />
+      </motion.g>
+    );
+
+    labels.push(
+      <motion.g key={`label-${slice.label}`}>
+        <motion.text x={endX / 2} y={endY / 2} fill={textColor} textAnchor="middle" fontSize="9px">
+          {slice.label}
+        </motion.text>
+        <motion.text x={endX / 2} y={endY / 2 + 12} fill={textColor} textAnchor="middle" fontSize="9px">
+          {slice.value}
+        </motion.text>
+      </motion.g>
+    );
+
+    startAngle = endAngle;
+  });
   return (
-    <div className='bg-white h-5 w-5'> </div>
+    <div className="w-1/3" style={{ position: 'relative' }}>
+      <svg
+        viewBox="-100 -100 200 200"
+      >
+        {slices}
+        {labels}
+        <circle cx="0" cy="0" r="60" fill="none" className="pie-chart-hole" />
+      </svg>
+    </div>
   );
 };
-
-export default PieChart;

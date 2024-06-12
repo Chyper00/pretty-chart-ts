@@ -1,5 +1,9 @@
 // import { BarChart } from "pretty-chart-ts";
 
+import { PieChart } from "pretty-chart-ts";
+
+
+
 // const data = [
 // 	{ value: 30, label: 'A', description: 'Description A' },
 // 	{ value: 70, label: 'B', description: 'Description B' },
@@ -26,23 +30,19 @@
 
 // export default App;
 
+const App: React.FC = () => {
+	const data = [
+		{ label: 'A', value: 30, color: '#FF5733', description: 'Descrição para A' },
+		{ label: 'B', value: 20, color: '#33FF57', description: 'Descrição para B' },
+		{ label: 'C', value: 50, color: '#5733FF', description: 'Descrição para C' },
+	];
 
-import { PieChart } from 'pretty-chart-ts';
-
-// const data = [
-// 	{ value: 30, color: '#ff0000' },
-// 	{ value: 70, color: '#00ff00' },
-// 	{ value: 100, color: '#0000ff' },
-// 	{ value: 50, color: '#ffff00' },
-// 	{ value: 90, color: '#ff00ff' },
-// ];
-
-function App() {
 	return (
-		<div className="flex justify-center items-center h-screen bg-zinc-950 text-white">
-			<PieChart />
+		<div className="flex justify-center items-center h-screen bg-zinc-950">
+			<PieChart data={data} />
 		</div>
 	);
-}
+};
 
 export default App;
+
