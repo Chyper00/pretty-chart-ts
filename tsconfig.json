@@ -6,7 +6,7 @@
 		"module": "ESNext",
 		"skipLibCheck": true,
 		"paths": {
-			"pretty-chart": ["./lib/main.ts"]
+			"pretty-chart-ts": ["./lib/main.ts"]
 		},
 
 		/* Bundler mode */

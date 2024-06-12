@@ -1,21 +1,26 @@
 import { BarChart } from "pretty-chart-ts";
 
-const data = [30, 70, 100, 50, 90, 30, 70, 100, 50, 90];
-const labels = ['A', 'B', 'C', 'D', 'E', 'A', 'B', 'C', 'D', 'E'];
+const data = [
+	{ value: 30, label: 'A', description: 'Description A' },
+	{ value: 70, label: 'B', description: 'Description B' },
+	{ value: 100, label: 'C', description: 'Description C' },
+	{ value: 50, label: 'D', description: 'Description D' },
+	{ value: 90, label: 'E', description: 'Description E' },
+	{ value: 30, label: 'A', description: 'Description A' },
+	{ value: 70, label: 'B', description: 'Description B' },
+	{ value: 100, label: 'C', description: 'Description C' },
+	{ value: 50, label: 'D', description: 'Description D' },
+	{ value: 90, label: 'E', description: 'Description E' }
+];
+
 
 function App() {
 	return (
-		<>
-			<div className="flex justify-center items-center h-screen bg-zinc-950 text-white">
-				<BarChart
-					data={data}
-					labels={labels}
-					backgroundColor="#7134db"
-					borderRadius="3px"
-					duration={1.5}
-				/>
-			</div>
-		</>
+		<div className="flex justify-center items-center h-screen bg-zinc-950 text-white">
+			<BarChart
+				data={data}
+			/>
+		</div>
 	);
 }
 

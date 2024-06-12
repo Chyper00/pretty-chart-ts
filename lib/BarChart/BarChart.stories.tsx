@@ -11,8 +11,13 @@ const meta: Meta<typeof BarChart> = {
 	},
 };
 
-const data = [30, 70, 100, 50, 90];
-const labels = ['A', 'B', 'C', 'D', 'E'];
+const data = [
+	{ value: 30, label: 'A', description: 'Description A' },
+	{ value: 70, label: 'B', description: 'Description B' },
+	{ value: 100, label: 'C', description: 'Description C' },
+	{ value: 50, label: 'D', description: 'Description D' },
+	{ value: 90, label: 'E', description: 'Description E' },
+];
 
 export default meta;
 
@@ -21,7 +26,6 @@ const Template: StoryFn<BarChartProps> = (args) => <BarChart {...args} />;
 export const BarChartStory = Template.bind({});
 BarChartStory.args = {
 	data,
-	labels,
 	backgroundColor: '#b72fb7',
 	borderRadius: '3px',
 	duration: 1.5,

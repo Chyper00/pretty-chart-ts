@@ -12,8 +12,8 @@ export default defineConfig({
     // library entry and output settings
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
-      name: "pretty-chart",
-      fileName: "pretty-chart",
+      name: "pretty-chart-ts",
+      fileName: "pretty-chart-ts",
     },
     // bundler options
     // externalize react-related imports
