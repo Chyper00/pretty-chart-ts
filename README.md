@@ -1,26 +1,26 @@
-# pretty-chart-ts-ts 📊
+# pretty-chart-ts 📊
 
-[![npm version](https://img.shields.io/npm/v/pretty-chart-ts-ts.svg)](https://www.npmjs.com/package/pretty-chart-ts-ts)
+[![npm version](https://img.shields.io/npm/v/pretty-chart-ts.svg)](https://www.npmjs.com/package/pretty-chart-ts)
 
 ## About ℹ️
 
-pretty-chart-ts-ts is a simple library that provides easy-to-use charts 📈
+pretty-chart-ts is a simple library that provides easy-to-use charts 📈
 
 ## Setup 🛠️
 
-You can install pretty-chart-ts-ts via npm or yarn:
+You can install pretty-chart-ts via npm or yarn:
 
 ```bash
-npm install pretty-chart-ts-ts
+npm install pretty-chart-ts
 # or
-yarn add pretty-chart-ts-ts
+yarn add pretty-chart-ts
 ```
 
 ## Example bar-chart
 
 ```bash
 import React from 'react';
-import { BarChart } from 'pretty-chart-ts-ts';
+import { BarChart } from 'pretty-chart-ts';
 
 const data = [
   { value: 30, label: 'A', description: 'Description A' },

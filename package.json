@@ -1,5 +1,5 @@
 {
-  "name": "pretty-chart-ts-ts",
+  "name": "pretty-chart-ts",
   "version": "0.1.5",
   "type": "module",
   "files": [
@@ -10,7 +10,7 @@
   "module": "./dist/pretty-chart-ts.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seuusername/pretty-chart-ts-ts.git"
+    "url": "https://github.com/Chyper00/pretty-chart-ts"
   },
   "exports": {
     ".": {
@@ -40,7 +40,6 @@
     "cli-table3": "0.6.0",
     "framer-motion": "^11.2.10",
     "jsdom": "^24.0.0",
-    "pretty-chart-ts-ts": "^0.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite-tsconfig-paths": "^4.3.2"
