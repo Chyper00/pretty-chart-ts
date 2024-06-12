@@ -8700,9 +8700,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-chart-ts-ts@npm:^0.1.4, pretty-chart-ts-ts@workspace:.":
+"pretty-chart-ts@workspace:.":
   version: 0.0.0-use.local
-  resolution: "pretty-chart-ts-ts@workspace:."
+  resolution: "pretty-chart-ts@workspace:."
   dependencies:
     "@emotion/is-prop-valid": "npm:^1.2.2"
     "@storybook/addon-essentials": "npm:^8.0.2"
@@ -8730,7 +8730,6 @@ __metadata:
     framer-motion: "npm:^11.2.10"
     jsdom: "npm:^24.0.0"
     postcss: "npm:^8.4.36"
-    pretty-chart-ts-ts: "npm:^0.1.4"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     storybook: "npm:^8.0.2"
