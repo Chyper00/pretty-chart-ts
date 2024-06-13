@@ -2703,7 +2703,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:8.1.8":
+"@storybook/builder-vite@npm:8.1.8, @storybook/builder-vite@npm:^8.1.8":
   version: 8.1.8
   resolution: "@storybook/builder-vite@npm:8.1.8"
   dependencies:
@@ -8710,6 +8710,7 @@ __metadata:
     "@storybook/addon-links": "npm:^8.0.2"
     "@storybook/addon-onboarding": "npm:^8.0.2"
     "@storybook/blocks": "npm:^8.0.2"
+    "@storybook/builder-vite": "npm:^8.1.8"
     "@storybook/cli": "npm:^8.1.8"
     "@storybook/react": "npm:^8.1.8"
     "@storybook/react-vite": "npm:^8.0.2"

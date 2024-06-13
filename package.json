@@ -53,6 +53,7 @@
     "@storybook/addon-links": "^8.0.2",
     "@storybook/addon-onboarding": "^8.0.2",
     "@storybook/blocks": "^8.0.2",
+    "@storybook/builder-vite": "^8.1.8",
     "@storybook/cli": "^8.1.8",
     "@storybook/react": "^8.1.8",
     "@storybook/react-vite": "^8.0.2",
