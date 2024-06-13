@@ -29,11 +29,12 @@
     "preview": "vite preview",
     "prepublish": "npm run build",
     "storybook-dev": "storybook dev -p 6006",
-    "storybook": "start-storybook -p 6006 -s public", 
+    "storybook": "start-storybook -p 6006 -s public",
     "serve-storybook": "serve storybook-static",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "clean-install":"npm cache clean --force && npm install"
+    "clean-install": "npm cache clean --force && npm install",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "^1.2.2",
