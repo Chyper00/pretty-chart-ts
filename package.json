@@ -34,7 +34,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "clean-install": "npm cache clean --force && npm install",
-    "build-storybook": "storybook build"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "^1.2.2",
