@@ -32,9 +32,9 @@ import { PieChart } from "pretty-chart-ts";
 
 const App: React.FC = () => {
 	const data = [
-		{ label: 'A', value: 30, color: '#FF5733', description: 'Descrição para A' },
-		{ label: 'B', value: 20, color: '#33FF57', description: 'Descrição para B' },
-		{ label: 'C', value: 50, color: '#5733FF', description: 'Descrição para C' },
+		{ label: 'A', value: 30, color: '#0e7490', description: 'Descrição para A' },
+		{ label: 'B', value: 20, color: '#7c3aed', description: 'Descrição para B' },
+		{ label: 'C', value: 50, color: '#db2777', description: 'Descrição para C' },
 	];
 
 	return (
