@@ -1,5 +1,6 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json", 
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build sb",
   "devCommand": "npm run storybook",
   "installCommand": "npm run clean-install && npm install",
   "framework": null,
