@@ -29,7 +29,7 @@
     "prepublish": "npm run build",
     "storybook-dev": "storybook dev -p 6006",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "sb build",
     "serve-storybook": "serve storybook-static",
     "test": "vitest",
     "coverage": "vitest run --coverage"
