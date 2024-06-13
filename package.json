@@ -23,7 +23,7 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "rm -rf dist",
-    "build": "tsc && vite build && build sb",
+    "build": "tsc && vite build && npm run build sb",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prepublish": "npm run build",
