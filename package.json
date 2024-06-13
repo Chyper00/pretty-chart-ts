@@ -32,7 +32,8 @@
     "build-storybook": "sb build",
     "serve-storybook": "serve storybook-static",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "clean-install":"npm cache clean --force && npm install"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "^1.2.2",
