@@ -43,12 +43,17 @@ export const PieChart: React.FC<PieChartProps> = ({ data, textColor = "#fff" }) 
       </motion.g>
     );
 
+    // Calculate the middle angle of the slice for label positioning
+    const middleAngle = startAngle + angle / 2;
+    const labelX = Math.cos((middleAngle * Math.PI) / 180) * 70;
+    const labelY = Math.sin((middleAngle * Math.PI) / 180) * 70;
+
     labels.push(
       <motion.g key={`label-${slice.label}`}>
-        <motion.text x={endX / 2} y={endY / 2} fill={textColor} textAnchor="middle" fontSize="9px">
+        <motion.text x={labelX} y={labelY - 6} fill={textColor} textAnchor="middle" fontSize="9px">
           {slice.label}
         </motion.text>
-        <motion.text x={endX / 2} y={endY / 2 + 12} fill={textColor} textAnchor="middle" fontSize="9px">
+        <motion.text x={labelX} y={labelY + 6} fill={textColor} textAnchor="middle" fontSize="9px">
           {slice.value}
         </motion.text>
       </motion.g>
@@ -56,11 +61,10 @@ export const PieChart: React.FC<PieChartProps> = ({ data, textColor = "#fff" }) 
 
     startAngle = endAngle;
   });
+
   return (
     <div className="w-1/3" style={{ position: 'relative' }}>
-      <svg
-        viewBox="-100 -100 200 200"
-      >
+      <svg viewBox="-100 -100 200 200">
         {slices}
         {labels}
         <circle cx="0" cy="0" r="60" fill="none" className="pie-chart-hole" />
