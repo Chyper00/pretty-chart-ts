@@ -2535,7 +2535,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-essentials@npm:^8.1.8":
+"@storybook/addon-essentials@npm:^8.0.2":
   version: 8.1.8
   resolution: "@storybook/addon-essentials@npm:8.1.8"
   dependencies:
@@ -2566,7 +2566,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-interactions@npm:^8.1.8":
+"@storybook/addon-interactions@npm:^8.0.2":
   version: 8.1.8
   resolution: "@storybook/addon-interactions@npm:8.1.8"
   dependencies:
@@ -2580,7 +2580,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:^8.1.8":
+"@storybook/addon-links@npm:^8.0.2":
   version: 8.1.8
   resolution: "@storybook/addon-links@npm:8.1.8"
   dependencies:
@@ -2606,7 +2606,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-onboarding@npm:^8.1.8":
+"@storybook/addon-onboarding@npm:^8.0.2":
   version: 8.1.8
   resolution: "@storybook/addon-onboarding@npm:8.1.8"
   dependencies:
@@ -2641,7 +2641,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.1.8, @storybook/blocks@npm:^8.1.8":
+"@storybook/blocks@npm:8.1.8, @storybook/blocks@npm:^8.0.2":
   version: 8.1.8
   resolution: "@storybook/blocks@npm:8.1.8"
   dependencies:
@@ -2703,7 +2703,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:8.1.8":
+"@storybook/builder-vite@npm:8.1.8, @storybook/builder-vite@npm:^8.1.8":
   version: 8.1.8
   resolution: "@storybook/builder-vite@npm:8.1.8"
   dependencies:
@@ -2753,7 +2753,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/cli@npm:8.1.8":
+"@storybook/cli@npm:8.1.8, @storybook/cli@npm:^8.1.8":
   version: 8.1.8
   resolution: "@storybook/cli@npm:8.1.8"
   dependencies:
@@ -3134,7 +3134,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react-vite@npm:^8.1.8":
+"@storybook/react-vite@npm:^8.0.2":
   version: 8.1.8
   resolution: "@storybook/react-vite@npm:8.1.8"
   dependencies:
@@ -3220,7 +3220,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/test@npm:8.1.8, @storybook/test@npm:^8.1.8":
+"@storybook/test@npm:8.1.8, @storybook/test@npm:^8.0.2":
   version: 8.1.8
   resolution: "@storybook/test@npm:8.1.8"
   dependencies:
@@ -8705,14 +8705,16 @@ __metadata:
   resolution: "pretty-chart-ts@workspace:."
   dependencies:
     "@emotion/is-prop-valid": "npm:^1.2.2"
-    "@storybook/addon-essentials": "npm:^8.1.8"
-    "@storybook/addon-interactions": "npm:^8.1.8"
-    "@storybook/addon-links": "npm:^8.1.8"
-    "@storybook/addon-onboarding": "npm:^8.1.8"
-    "@storybook/blocks": "npm:^8.1.8"
+    "@storybook/addon-essentials": "npm:^8.0.2"
+    "@storybook/addon-interactions": "npm:^8.0.2"
+    "@storybook/addon-links": "npm:^8.0.2"
+    "@storybook/addon-onboarding": "npm:^8.0.2"
+    "@storybook/blocks": "npm:^8.0.2"
+    "@storybook/builder-vite": "npm:^8.1.8"
+    "@storybook/cli": "npm:^8.1.8"
     "@storybook/react": "npm:^8.1.8"
-    "@storybook/react-vite": "npm:^8.1.8"
-    "@storybook/test": "npm:^8.1.8"
+    "@storybook/react-vite": "npm:^8.0.2"
+    "@storybook/test": "npm:^8.0.2"
     "@testing-library/jest-dom": "npm:^6.4.2"
     "@testing-library/react": "npm:^14.2.1"
     "@testing-library/user-event": "npm:^14.5.2"
@@ -8732,7 +8734,7 @@ __metadata:
     postcss: "npm:^8.4.36"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    storybook: "npm:^8.1.8"
+    storybook: "npm:^8.0.2"
     tailwindcss: "npm:^3.4.1"
     typescript: "npm:^5.4.2"
     vite: "npm:^5.1.6"
@@ -9880,7 +9882,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:^8.1.8":
+"storybook@npm:^8.0.2":
   version: 8.1.8
   resolution: "storybook@npm:8.1.8"
   dependencies:
