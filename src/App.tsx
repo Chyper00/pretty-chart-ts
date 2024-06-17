@@ -1,6 +1,6 @@
 // import { BarChart } from "pretty-chart-ts";
 
-import { PieChart } from "pretty-chart-ts";
+import { BarChart, DataType } from "pretty-chart-ts";
 
 
 
@@ -28,21 +28,32 @@ import { PieChart } from "pretty-chart-ts";
 // 	);
 // }
 
-// export default App;
+// export default App; 
 
-const App: React.FC = () => {
-	const data = [
-		{ label: 'A', value: 30, color: '#0e7490', description: 'Descrição para A' },
-		{ label: 'B', value: 20, color: '#7c3aed', description: 'Descrição para B' },
-		{ label: 'C', value: 50, color: '#db2777', description: 'Descrição para C' },
-	];
+const data: DataType[] = [
+	{ value: 45, label: 'Peach', children: <span className='text-4xl'>🍑</span>, childrenPosition: "inside" },
+	{ value: 30, label: 'Watermelon', children: <span>🍉</span> },
+	{ value: 50, label: 'Orange', children: <span>🍊</span> },
+	{ value: 25, label: 'Strawberry', children: <span>🍓</span>, description: 'An description about straberry ' },
+	{ value: 35, label: 'Kiwi', children: <span className='text-4xl'>🥝</span>, childrenPosition: "outside" },
+];
 
-	return (
-		<div className="flex justify-center items-center h-screen bg-zinc-950">
-			<PieChart data={data} />
-		</div>
-	);
+const handleClick = (item: DataType) => {
+	alert(`Clicked on ${item.label}`);
 };
 
-export default App;
+const MyComponent = () => (
+	<div className="flex bg-slate-800 h-screen justify-center items-center text-white">
+		<BarChart
+			data={data}
+			width={100}
+			style="rounded-lg bg-purple-800"
+			duration={1.5}
+			callback={handleClick}
+		/>
+	</div>
+);
+
+export default MyComponent;
+
 

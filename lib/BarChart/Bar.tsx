@@ -1,59 +1,57 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-
-interface BarProps {
-  value: number;
-  maxHeight: number;
-  backgroundColor?: string;
-  borderRadius?: string;
-  duration?: number;
-  description: string;
-  callback?: (arg0: number, arg1: string) => void
-}
+import { BarProps } from './Bar.interface';
 
 export const Bar: React.FC<BarProps> = ({
   value,
   maxHeight,
-  backgroundColor = '#7134db',
-  borderRadius = '3px',
   duration = 1.5,
   description,
-  callback
+  callback,
+  children,
+  childrenPosition = 'outside',
+  width = 55,
+  style = 'bg-purple-800 rounded-sm',
+  ...rest
 }) => {
   const [showTooltip, setShowTooltip] = useState(false);
   const scaledHeight = (value / maxHeight) * 100;
 
-
   const handleClick = () => {
     if (callback) {
-      callback(value, description);
+      callback({ value, description, children, childrenPosition, ...rest });
     }
   };
+
   return (
     <div
-      className='gap-2'
+      className={`relative gap-2 ${callback && 'cursor-pointer'}`}
       onMouseEnter={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}
       onClick={handleClick}
-
-      style={{ position: 'relative' }}
-
     >
-      {showTooltip && (
+      {showTooltip && description && (
         <div className="absolute bottom-full bg-black bg-opacity-75 text-white p-2 rounded whitespace-nowrap z-10">
           {description}
         </div>
       )}
+      {childrenPosition === 'outside' && (
+        <div className="flex w-full p-1 justify-center align-middle items-center">
+          {children}
+        </div>
+      )}
       <motion.div
-        initial={{ width: 55 }}
+        initial={{ width: width }}
         animate={{ height: scaledHeight }}
         transition={{ duration }}
-        style={{
-          height: '0px',
-          backgroundColor,
-          borderRadius,
-        }}
-      />
+        className={style}
+      >
+        {childrenPosition === 'inside' && (
+          <div className="flex w-full p-1 justify-center align-middle items-center">
+            {children}
+          </div>
+        )}
+      </motion.div>
     </div>
   );
 };

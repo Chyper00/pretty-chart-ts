@@ -1,37 +1,33 @@
 import { Bar } from "./Bar";
-
-export interface BarChartProps {
-  data: { value: number; label: string; description: string }[];
-  backgroundColor?: string;
-  borderRadius?: string;
-  duration?: number;
-  callback?: (value: number, description: string) => void;
-}
+import { BarChartProps } from "./Bar.interface";
 
 export const BarChart: React.FC<BarChartProps> = ({
   data,
   backgroundColor,
   borderRadius,
   duration,
-  callback
+  width,
+  callback,
+  style
 }) => {
   const maxHeight = Math.max(...data.map(item => item.value));
-
+  console.log(maxHeight)
   return (
-    <div style={{ display: 'flex', alignItems: 'flex-end', height: '300px' }}>
+    <div className="flex items-end h-72">
       {data.map((item, index) => (
-        <div key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '0 5px' }}>
+        <div key={index} className={`flex flex-col items-center mx-1`}>
           <span>{item.value}</span>
           <Bar
+            {...item}
+            width={width}
             callback={callback}
-            value={item.value}
             maxHeight={maxHeight}
             backgroundColor={backgroundColor}
             borderRadius={borderRadius}
             duration={duration}
-            description={item.description}
+            style={style}
           />
-          <span style={{ marginTop: '5px' }}>{item.label}</span>
+          <span className="mt-2">{item.label}</span>
         </div>
       ))}
     </div>
