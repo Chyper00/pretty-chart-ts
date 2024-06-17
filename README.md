@@ -10,7 +10,7 @@ Please consider sponsoring this project.
 
 Pretty Chart is a simple library that provides easy-to-use charts with animations.
 
-<img src='https://github.com/Chyper00/pretty-chart-ts/blob/update-readme/public/barchart.png' width="250px"/>
+<img src='https://github.com/Chyper00/pretty-chart-ts/blob/update-readme/public/barchart.png'/>
 
 ## Setup 🛠️
 
