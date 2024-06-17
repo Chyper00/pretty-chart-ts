@@ -5,9 +5,9 @@
 ## SPONSOR
 
 <a href="https://github.com/sponsors/Chyper00">
-<img src="https://pbs.twimg.com/media/Ea__31zWsAAwjDT.png" width="80px"/>
+<img src="https://pbs.twimg.com/media/Ea__31zWsAAwjDT.png" width="150px"/>
 <br/>
-Please consider sponsoring this project</a>
+Please consider sponsoring this project 🙏 </a>
 
 ## About ℹ️
 
