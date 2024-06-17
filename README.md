@@ -6,7 +6,7 @@
 
 pretty-chart-ts is a simple library that provides easy-to-use charts 📈
 
-<img src=''/>
+<img src='https://github.com/Chyper00/pretty-chart-ts/blob/update-readme/public/barchart.png'/>
 
 ## Setup 🛠️
 
