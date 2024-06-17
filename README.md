@@ -4,7 +4,10 @@
 
 ## SPONSOR
 
-Please consider sponsoring this project.
+<a href="https://github.com/sponsors/Chyper00">
+<img src="https://pbs.twimg.com/media/Ea__31zWsAAwjDT.png" width="80px"/>
+<br/>
+Please consider sponsoring this project</a>
 
 ## About ℹ️
 
