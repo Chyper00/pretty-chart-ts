@@ -6,6 +6,8 @@
 
 pretty-chart-ts is a simple library that provides easy-to-use charts 📈
 
+<img src=''/>
+
 ## Setup 🛠️
 
 You can install pretty-chart-ts via npm or yarn:
