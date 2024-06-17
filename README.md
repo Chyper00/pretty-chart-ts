@@ -2,9 +2,16 @@
 
 [![npm version](https://img.shields.io/npm/v/pretty-chart-ts.svg)](https://www.npmjs.com/package/pretty-chart-ts)
 
+## SPONSOR
+
+<a href="https://github.com/sponsors/Chyper00">
+<img src="https://pbs.twimg.com/media/Ea__31zWsAAwjDT.png" width="150px"/>
+<br/>
+Please consider sponsoring this project 🙏 </a>
+
 ## About ℹ️
 
-pretty-chart-ts is a simple library that provides easy-to-use charts 📈
+Pretty Chart is a simple library that provides easy-to-use charts with animations.
 
 <img src='https://github.com/Chyper00/pretty-chart-ts/blob/update-readme/public/barchart.png'/>
 
